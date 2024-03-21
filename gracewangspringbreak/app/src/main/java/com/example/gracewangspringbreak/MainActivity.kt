@@ -21,9 +21,6 @@ import java.util.Locale
 class MainActivity : AppCompatActivity(), SensorEventListener {
     private lateinit var sensorManager: SensorManager
     private var accelerometer: Sensor? = null
-    private var lastShakeTime: Long = 0
-    private val shakeThreshold = 2.7f
-    private val shakeTimeout = 500
     private lateinit var selectedLanguage: String
     private lateinit var speechText: EditText
 
